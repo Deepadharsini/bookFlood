@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookFlood</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1> BookFlood </h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>The story begins with the author as a young boy, observing the contrasting financial mindsets and behaviors of his own father, the "poor dad," and a friend's father, the "rich dad." The poor dad held a high position in education and emphasized the importance of academic success, job security, and living within one's means. The rich dad, a successful entrepreneur, believed in building assets, investing wisely, and acquiring financial knowledge. It describes how the rich dad teaches the author and his friend finance through practical lessons.</p>
+             <button onclick = "deletebox(event)">Delete</button>
+        </div>
+        <div class="book-container">
+            <h2>Atomic Habits</h2>
+            <h5>James Clear</h5>
+            <p>Atomic Habits by James Clear is a comprehensive, practical guide on how to change your habits and get 1% better every day. Using a framework called the Four Laws of Behavior Change, Atomic Habits teaches readers a simple set of rules for creating good habits and breaking bad ones. Read the full summary to glean 3 key lessons from Atomic Habits, learn how to build a habit in 4 simple steps, and get a handy reference guide for the strategies recommended throughout the book.</p>
+             <button onclick = "deletebox(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class ="popup-box">
+        <h2>ADD A BOOK</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Author of the Book" id ="author-input">
+            <textarea placeholder= "Short Book Description" id = "description-input"></textarea>
+            <button id ="add-book">Add</button>
+            <button id= "cancelpopup" >Cancel</button>
+        
+        </form>
+    </div>
+      <button class="add-button" id ="add-popup-button" onclick ="popup()">+</button>
+    <script src="script.js"> </script>
+</body>
+</html>
